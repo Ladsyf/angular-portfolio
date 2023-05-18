@@ -1,0 +1,11 @@
+:host {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 600px;
+  height: 100vh;
+}
+@media screen and (max-width: 850px){
+  :host {
+  }
+}

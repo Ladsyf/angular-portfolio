@@ -1,0 +1,76 @@
+:host {
+  position: relative;
+  display: flex;
+  height: 25em;
+  width: 25em;
+  font-size: 1rem;
+  flex-wrap: wrap;
+  margin-left: 50px;
+}
+#myPicContainer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  --width: 25em;
+  --picWidth: 25em;
+  --picRight: 0.813em;
+  --picBot: -0.938em;
+  height: var(--width);
+  width: var(--width);
+  transition: 0.3s;
+}
+#picBackground {
+  background-color: var(--text-color-secondary);
+  position: absolute;
+  bottom: 0em;
+  left: 0em;
+  height: calc(var(--width) - 1.563em);
+  width: calc(var(--width) - 1.563em);
+  border-radius: 99999px;
+  transition: 0.3s;
+}
+
+#mejpg {
+  height: var(--picWidth);
+  width: var(--picWidth);
+  bottom: var(--picBot);
+  right: var(--picRight);
+  object-fit: cover;
+  position: absolute;
+  transition: 0.3s;
+}
+
+#myPicContainer:hover {
+  --width: 25.625em;
+  --picWidth: 26.563em;
+  --picRight: 0.688em;
+  --picBot: -1.25em;
+}
+@media screen and (max-width: 1300px) {
+  #myPicContainer {
+    --width: 18.75em;
+    --picWidth: 18.75em;
+    --picRight: 0.938em;
+    --picBot: -0.625em;
+  }
+  #myPicContainer:hover {
+    --width: 19.375em;
+    --picWidth: 20.313em;
+    --picRight: 0.75em;
+    --picBot: -0.75em;
+  }
+  :host {
+    width: 18.75em;
+    height: 18.75em;
+  }
+
+  #picBackground {
+    bottom: 0px;
+    left: 0px;
+  }
+}
+@media screen and (max-width: 850px){
+  :host {
+    font-size: .7rem;
+  }
+}

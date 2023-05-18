@@ -1,0 +1,20 @@
+@font-face {
+  font-family: gothamLight;
+  src: url('../../assets/font/GothamLight.ttf');
+}
+@font-face {
+  font-family: gothamBook;
+  src: url('../../assets/font/GothamBook.ttf');
+}
+@font-face {
+  font-family: gothamMedium;
+  src: url('../../assets/font/GothamMedium.ttf');
+}
+@font-face {
+  font-family: gothamBold;
+  src: url('../../assets/font/GothamBold.ttf');
+}
+@font-face {
+  font-family: fa;
+  src: url('../../assets/font/Segoe UI.ttf');
+}
