@@ -1,0 +1,18 @@
+<img class="thumbnail" src="/assets/image/project-thumbnail/{{project.thumbnail}}" >
+<span class="hoverable">
+  <span class="title">
+    {{project.title}}
+  </span>
+  <span class="role">
+    {{project.role}}
+  </span>
+  <span class="description">
+    <br>
+    {{project.description}}
+  </span>
+  <br>
+  <span class="technologies">
+    <span class="chip" *ngFor="let tech of project.technologies">{{tech.name}}</span>
+  </span>
+</span>
+

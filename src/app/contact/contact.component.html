@@ -1,0 +1,8 @@
+<prt-navigation-bar [active]="4" [@hide] *ngIf="isOpen()"></prt-navigation-bar>
+<prt-section-layout header="Here's how you can reach me" [@fade] *ngIf="!isNext()">
+</prt-section-layout>
+<prt-previous
+  label="About me"
+  (click)="changePath('/about-me')"
+  [@closeOpen]="isOpen() ? 'open' : 'closed'"
+></prt-previous>

@@ -3,13 +3,17 @@ import { CommonModule } from '@angular/common';
 import { SectionLayoutComponent } from './section-layout/section-layout.component';
 import { PhotoTrademarkComponent } from './photo-trademark/photo-trademark.component';
 import { FormsModule } from '@angular/forms';
+import { NextComponent } from './next/next.component';
+import { PreviousComponent } from './previous/previous.component';
 
 
 
 @NgModule({
   declarations: [
     SectionLayoutComponent,
-    PhotoTrademarkComponent
+    PhotoTrademarkComponent,
+    NextComponent,
+    PreviousComponent
   ],
   imports: [
     CommonModule,
@@ -19,7 +23,9 @@ import { FormsModule } from '@angular/forms';
     CommonModule,
     SectionLayoutComponent,
     PhotoTrademarkComponent,
-    FormsModule
+    FormsModule,
+    NextComponent,
+    PreviousComponent
   ]
 })
 export class SharedModule { }

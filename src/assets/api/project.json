@@ -1,0 +1,88 @@
+[
+  {
+    "id": 1,
+    "title": "Research Library Website (2018/2019)",
+    "role": "Full-stack Developer",
+    "github": "https://github.com/Ladsyf/Research-Library",
+    "description": "This aims to be the school's main portal for repository of student researches across Senior High Department. Students can upload their research to the website and also access other student researches",
+    "thumbnail": "research library.png",
+    "features": [],
+    "technologies": [
+      { "name": "HTML" },
+      { "name": "CSS" },
+      { "name": "JavaScript" },
+      { "name": "PHP" },
+      { "name": "MySQL" }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Hotel Reservation System (2021)",
+    "role": "Back-end developer",
+    "github": "https://github.com/Ladsyf/Hotel-Reservation",
+    "description": "This is a platform wherein customers can book room accommodation for leisure purposes.",
+    "thumbnail": "hoterreservationsystem.png",
+    "features": [],
+    "technologies": [
+      { "name": "Java" },
+      { "name": "Java Swing" },
+      { "name": "MySQL" }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Cheese Chat Room Application (2022)",
+    "role": "Full-stack developer",
+    "github": "https://github.com/Ladsyf/Cheese-Public-Chatroom",
+    "description": "A simple chat room application. Users can create chat rooms, public or private, and share the link of that room.",
+    "thumbnail": "cheese.png",
+    "features": [],
+    "technologies": [
+      { "name": "Flask" },
+      { "name": "socket.io" },
+      { "name": "JavaScript" },
+      { "name": "TailwindCSS" },
+      { "name": "SQLite/PostgreSQL" }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "Faculty Management System (2022)",
+    "role": "Back-end developer",
+    "github": "https://github.com/Ladsyf/FacMaSys",
+    "description": "For managing faculties and their subjects, researches, and extension services.",
+    "thumbnail": "faculty-management-system.png",
+    "features": [],
+    "technologies": [{ "name": "Django" }, { "name": "SQLite" }]
+  },
+  {
+    "id": 5,
+    "title": "ENVote: An Online Voting System for Student Government Elections of Bulacan Polytechnic College (2022)",
+    "role": "Full-stack developer",
+    "link": "https://bulacanpolytechniccollege.en-vote.com/login",
+    "description": "An online voting system platform for SG and SSG elections of Bulacan Polytechnic College. Users can vote with ease using their own devices, and can see candidates’ platforms before voting. After the election, results are displayed.",
+    "thumbnail": "envote.png",
+    "features": [],
+    "technologies": [
+      { "name": "Laravel 9" },
+      { "name": "JavaScript" },
+      { "name": "TailwindCSS" },
+      { "name": "MySQL" }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "Capstone Titles Evaluation System (2023)",
+    "role": "Full-stack developer",
+    "link": "https://4ictes.almarjavier.com",
+    "description": "Evaluation system for capstone title proposal of capstone groups. The system should determine which capstone title a group should persue among the 3 titles submitted",
+    "thumbnail": "capstonetitlesevaulationsystem.png",
+    "features": [],
+    "technologies": [
+      { "name": "Laravel 10" },
+      { "name": "TypeScript" },
+      { "name": "Angular 15" },
+      { "name": "MySQL" }
+    ]
+  }
+]

@@ -1,0 +1,9 @@
+<prt-navigation-bar [active]="1" [@hide] *ngIf="isOpen()"></prt-navigation-bar>
+<prt-section-layout [@fade] *ngIf="!isNext()">
+  <prt-home></prt-home>
+</prt-section-layout>
+<prt-next
+  label="Projects"
+  (click)="changePath('/projects')"
+  [@openClose]="isOpen() ? 'open' : 'closed'"
+></prt-next>

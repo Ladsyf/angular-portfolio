@@ -10,6 +10,9 @@
   top:0px;
   z-index: 9999999999999999;
 }
+.nav-active-link{
+  font-family: 'gothamMedium';
+}
 a{
   display: flex;
   align-items: center;

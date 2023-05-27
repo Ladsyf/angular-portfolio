@@ -1,3 +1,7 @@
 :root {
-  --background-color: #fff
+  --background-color: #353535;
+  --background-color-hover: #353535eb;
+  --background-color-secondary: rgb(73, 73, 73);
+  --text-color: #e6e6e6;
+  --text-color-secondary: #a6a6a6;
 }

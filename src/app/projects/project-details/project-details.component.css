@@ -1,0 +1,65 @@
+:host {
+  position: relative;
+  top: 100px;
+}
+article {
+  margin: auto;
+  width: 65rem;
+  box-sizing: border-box;
+  padding: 10rem;
+  padding-top: 0rem;
+}
+h1 {
+  color: var(--text-color);
+  font-size: 1.5rem;
+  text-align: center;
+}
+h3 {
+  color: var(--text-color);
+}
+p {
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.thumbnail {
+  width: 100%;
+  border-radius: 1rem;
+}
+.socialIcon,
+.socialIcon > * {
+  --wh: 30px;
+  width: var(--wh);
+  height: var(--wh);
+  fill: var(--text-color-secondary);
+}
+.anchor {
+  color: blue;
+}
+.technologies {
+  color: var(--text-color);
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.technology {
+  background-color: var(--background-color-secondary);
+  padding: .4rem;
+  border-radius: 999999999px;
+}
+@media screen and (max-width: 1100px){
+  article {
+    width: calc(100% - 2rem);
+    padding: 7rem;
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 650px){
+  article {
+    width: calc(100% - 2rem);
+    padding: 0rem;
+    padding-top: 0;
+  }
+}

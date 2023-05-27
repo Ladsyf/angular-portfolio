@@ -97,11 +97,10 @@
   </svg>
 
   <ul>
-    <li>Home</li>
-    <li>About me</li>
-    <li>Skills</li>
-    <li>Projects</li>
-    <li>Contact</li>
+    <li (click)="active === 1 ? '' : changePath('')" [ngClass]="{ 'nav-active-link' : active===1}">Home</li>
+    <li (click)="active === 2 ? '' : changePath('/projects')" [ngClass]="{ 'nav-active-link' : active===2}">Projects</li>
+    <li (click)="active === 3 ? '' : changePath('/about-me')" [ngClass]="{ 'nav-active-link' : active===3}">About me</li>
+    <li (click)="active === 4 ? '' : changePath('/contact')" [ngClass]="{ 'nav-active-link' : active===4}">Contact</li>
   </ul>
 </span>
 
@@ -149,7 +148,7 @@
   </a>
 
   <span class="switch">
-    <input type="checkbox" id="toggleDark" hidden />
+    <input type="checkbox" id="toggleDark" (change)="switchTheme($event)" hidden [checked]="isDark"/>
     <label for="toggleDark">
       <svg
         version="1.1"
@@ -296,10 +295,9 @@
 </span>
 <input type="checkbox" [(ngModel)]="navOpen" hidden />
 
-<div class="mobile-navigation" [ngClass]="{ 'nav-active': navOpen }">
-  <a>Home</a>
-  <a>About me</a>
-  <a>Skills</a>
-  <a>Projects</a>
-  <a>Contact</a>
+<div class="mobile-navigation" onclick="this.previousElementSibling.click()" [ngClass]="{ 'nav-active': navOpen }">
+  <a (click)="active === 1 ? '' : changePath('')" [ngClass]="{ 'nav-active-link' : active===1}">Home</a>
+  <a (click)="active === 2 ? '' : changePath('/projects')" [ngClass]="{ 'nav-active-link' : active===2}">Projects</a>
+  <a (click)="active === 3 ? '' : changePath('/about-me')" [ngClass]="{ 'nav-active-link' : active===3}">About me</a>
+  <a (click)="active === 4 ? '' : changePath('/contact')" [ngClass]="{ 'nav-active-link' : active===4}">Contact</a>
 </div>

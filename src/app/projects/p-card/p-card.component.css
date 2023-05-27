@@ -1,0 +1,77 @@
+:host {
+  background-color: var(--background-color-secondary);
+  position: relative;
+  width: 20rem;
+  border-radius: 0.3rem;
+  overflow: hidden;
+  padding: 0.4rem;
+  --hover-opacity: 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.061);
+}
+.thumbnail {
+  object-fit: cover;
+  width: 100%;
+  border-radius: 0.3rem;
+  height: 13rem;
+  box-sizing: border-box;
+}
+.hoverable {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color-hover);
+  width: 100%;
+  gap: 0.2rem;
+  height: 100%;
+  opacity: var(--hover-opacity);
+  border-radius: 0.3rem;
+  padding: 1rem;
+  box-sizing: border-box;
+  top: 0;
+  left: 0;
+  bottom: 0;
+}
+.title {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: var(--text-color);
+  font-family: "gothamMedium";
+}
+.role {
+  color: var(--text-color);
+  font-size: 0.8rem;
+}
+.description {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  font-size: .8rem;
+  color: var(--text-color);
+  text-align: justify;
+}
+.technologies {
+  color: var(--text-color);
+  font-size: .8rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem
+}
+.chip {
+  background-color: var(--background-color-secondary);
+  padding: .4rem;
+  border-radius: 999999px;
+}
+:host:hover {
+  --hover-opacity: 1;
+}
+
+@media screen and (max-width: 650px){
+  :host {
+    width: 100%;
+  }
+}

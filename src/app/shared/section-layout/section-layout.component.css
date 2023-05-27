@@ -1,9 +1,17 @@
 :host {
+  position: relative;
   display:flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 600px;
-  height: 100vh;
+  flex-wrap: wrap;
+  width: 100dwh;
+  flex-direction: column;
+  background-color: var(--background-color);
+}
+.header {
+  width: 100%;
+  text-align: center;
+  color: var(--text-color);
+  padding: 2rem 0;
+  font-size: 1.5rem;
 }
 @media screen and (max-width: 850px){
   :host {

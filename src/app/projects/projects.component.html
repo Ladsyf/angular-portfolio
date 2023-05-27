@@ -1,0 +1,10 @@
+<prt-navigation-bar [active]="2" [@hide] *ngIf="isOpen()"></prt-navigation-bar>
+<prt-section-layout header="My Works" [@fade] *ngIf="!isNext()">
+  <prt-p-card [project]="project" *ngFor="let project of projects" (click)="changePath('/projects/' + project.id)"></prt-p-card>
+</prt-section-layout>
+<prt-previous
+  label="Home"
+  (click)="changePath('')"
+  [@closeOpen]="isOpen() ? 'open' : 'closed'"
+></prt-previous>
+<prt-next label="About me" (click)="changePath('/about-me')" [@openClose]="isOpen() ? 'open' : 'closed'"></prt-next>

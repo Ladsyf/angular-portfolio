@@ -1,0 +1,67 @@
+:host {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: auto;
+  box-sizing: border-box;
+  min-height: 600px;
+  height: 100dvh;
+}
+#intro {
+  position: relative;
+  display: flex;
+  font-size: 2rem;
+}
+#intro * {
+  font-family: "fa";
+  color: var(--text-color);
+  box-sizing: border-box;
+  margin:0;
+  position: relative;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+#intro > div {
+  left: .2rem;
+}
+#iam {
+  font-size: 3.5em;
+}
+#myName {
+  top:.29em;
+  font-size: 2em;
+}
+#role {
+  top: .19em;
+  font-size: .88em;
+}
+@media screen and (min-width: 2000px){
+  #intro {
+    font-size: 2.4rem;
+  }
+}
+@media screen and (max-width: 1300px){
+  #intro {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (max-width: 850px){
+  :host {
+    flex-direction: column-reverse;
+    gap: 0;
+  }
+}
+@media screen and (max-width: 476px) {
+  #intro {
+    font-size: 1rem;
+  }
+}
+@media screen and (max-width: 310px){
+  #intro {
+    font-size: .8rem;
+  }
+}

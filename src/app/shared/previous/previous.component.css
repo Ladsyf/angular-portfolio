@@ -1,0 +1,54 @@
+:host {
+  position: fixed;
+  left: 2rem;
+  top: 50%;
+  height: 40px;
+  --up-deg: -45deg;
+  --down-deg: 45deg;
+  --up-top: 7px;
+  --down-top: 26px;
+  --label-visibility: rgba(255, 255, 255, 0);
+  --label-right: -80%;
+  cursor: pointer;
+}
+.label {
+  position: absolute;
+  top: 23%;
+  white-space: nowrap;
+  font-size: 1.3rem;
+  left: var(--label-right);
+  color: var(--label-visibility);
+  font-family: 'gothamMedium';
+}
+.up {
+  display: block;
+  position: relative;
+  top: var(--up-top);
+  width: 35px;
+  height: 4px;
+  background-color: var(--text-color-secondary);
+  rotate: var(--up-deg);
+}
+.down {
+  display: block;
+  position: relative;
+  top: var(--down-top);
+  width: 35px;
+  height: 4px;
+  background-color: var(--text-color-secondary);
+  rotate: var(--down-deg);
+}
+
+:host:hover {
+  --down-deg: 60deg;
+  --up-deg: -60deg;
+  --up-top: 4px;
+  --down-top: 28px;
+  --label-visibility: var(--text-color-secondary);
+  --label-right: 105%;
+}
+@media screen and (max-width: 650px) {
+  :host {
+    display: none;
+  }
+}
