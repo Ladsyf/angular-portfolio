@@ -7,19 +7,19 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CoreModule } from './core/core.module';
 import { SharedModule } from './shared/shared.module';
-import { AboutMeComponent } from './about-me/about-me.component';
 import { HomeComponent } from './home/home.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { WrapperComponent } from './home/wrapper/wrapper.component';
 import { PCardComponent } from './projects/p-card/p-card.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectDetailsComponent } from './projects/project-details/project-details.component';
+import { AboutMeComponent } from './about-me/about-me.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    AboutMeComponent,
     HomeComponent,
+    AboutMeComponent,
     ProjectsComponent,
     WrapperComponent,
     PCardComponent,

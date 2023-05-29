@@ -6,6 +6,8 @@ import {
   nextAnimation,
   prevAnimation,
 } from '../animations';
+import { ActivatedRoute } from '@angular/router';
+import { ISkill } from '../interface/iskill';
 
 @Component({
   selector: 'prt-about-me',
@@ -19,9 +21,22 @@ import {
   ],
 })
 export class AboutMeComponent implements OnInit {
-  constructor(private _nav: NavigationService) {}
+
+  skills!: ISkill[]
+  backEnd!: ISkill[]
+  frontEnd!: ISkill[]
+  other!: ISkill[]
+
+  constructor(private _nav: NavigationService, private _route: ActivatedRoute) {}
 
   ngOnInit(): void {
+
+    this.skills = this._route.snapshot.data['skillListResolve']
+
+    this.frontEnd = this.skills.filter((skill:ISkill) => skill.type==="Front-end")
+    this.backEnd = this.skills.filter((skill:ISkill) => skill.type==="Back-end")
+    this.other = this.skills.filter((skill:ISkill) => skill.type==="Others")
+
     this._nav.isNext = false;
     this._nav.isOpen = true;
   }
@@ -37,3 +52,4 @@ export class AboutMeComponent implements OnInit {
     return this._nav.isOpen;
   }
 }
+

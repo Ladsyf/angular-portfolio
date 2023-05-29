@@ -1,4 +1,4 @@
-<img class="thumbnail" src="/assets/image/project-thumbnail/{{project.thumbnail}}" >
+<img class="thumbnail" [src]="project.thumbnail" >
 <span class="hoverable">
   <span class="title">
     {{project.title}}
@@ -14,5 +14,6 @@
   <span class="technologies">
     <span class="chip" *ngFor="let tech of project.technologies">{{tech.name}}</span>
   </span>
+
 </span>
 

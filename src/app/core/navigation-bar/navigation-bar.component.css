@@ -11,7 +11,7 @@
   z-index: 9999999999999999;
 }
 .nav-active-link{
-  font-family: 'gothamMedium';
+  font-family: 'gothamMedium' !important;
 }
 a{
   display: flex;
@@ -22,6 +22,11 @@ li {
   cursor: pointer;
   display: flex;
   align-items: center;
+}
+button {
+  background-color: transparent;
+  border: none;
+  color: var(--text-color)
 }
 .left{
   display:flex;
@@ -180,7 +185,8 @@ input:checked + label svg.moon {
     gap: 1.3rem;
     z-index: 1;
   }
-  .mobile-navigation {
+  .mobile-navigation > * {
+
     font-size: 1.3rem;
     font-family: 'gothamBook';
     color: var(--text-color)

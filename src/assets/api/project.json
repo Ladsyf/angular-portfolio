@@ -5,7 +5,7 @@
     "role": "Full-stack Developer",
     "github": "https://github.com/Ladsyf/Research-Library",
     "description": "This aims to be the school's main portal for repository of student researches across Senior High Department. Students can upload their research to the website and also access other student researches",
-    "thumbnail": "research library.png",
+    "thumbnail": "assets/image/project-thumbnail/research library.png",
     "features": [],
     "technologies": [
       { "name": "HTML" },
@@ -21,7 +21,7 @@
     "role": "Back-end developer",
     "github": "https://github.com/Ladsyf/Hotel-Reservation",
     "description": "This is a platform wherein customers can book room accommodation for leisure purposes.",
-    "thumbnail": "hoterreservationsystem.png",
+    "thumbnail": "assets/image/project-thumbnail/hoterreservationsystem.png",
     "features": [],
     "technologies": [
       { "name": "Java" },
@@ -35,7 +35,7 @@
     "role": "Full-stack developer",
     "github": "https://github.com/Ladsyf/Cheese-Public-Chatroom",
     "description": "A simple chat room application. Users can create chat rooms, public or private, and share the link of that room.",
-    "thumbnail": "cheese.png",
+    "thumbnail": "assets/image/project-thumbnail/cheese.png",
     "features": [],
     "technologies": [
       { "name": "Flask" },
@@ -47,21 +47,32 @@
   },
   {
     "id": 4,
+    "title": "MusicLink (2022)",
+    "role": "Designer",
+    "description": "A platform for amateur musicians who's struggling to gain listeners. The platform aims to help musicians to gain network and listeners.",
+    "thumbnail":"assets/image/project-thumbnail/MusicLink.jpg",
+    "features": [],
+    "technologies": [
+      { "name":"Adobe XD"}
+    ]
+  },
+  {
+    "id": 5,
     "title": "Faculty Management System (2022)",
     "role": "Back-end developer",
     "github": "https://github.com/Ladsyf/FacMaSys",
     "description": "For managing faculties and their subjects, researches, and extension services.",
-    "thumbnail": "faculty-management-system.png",
+    "thumbnail": "assets/image/project-thumbnail/faculty-management-system.png",
     "features": [],
     "technologies": [{ "name": "Django" }, { "name": "SQLite" }]
   },
   {
-    "id": 5,
+    "id": 6,
     "title": "ENVote: An Online Voting System for Student Government Elections of Bulacan Polytechnic College (2022)",
     "role": "Full-stack developer",
     "link": "https://bulacanpolytechniccollege.en-vote.com/login",
     "description": "An online voting system platform for SG and SSG elections of Bulacan Polytechnic College. Users can vote with ease using their own devices, and can see candidates’ platforms before voting. After the election, results are displayed.",
-    "thumbnail": "envote.png",
+    "thumbnail": "assets/image/project-thumbnail/envote.png",
     "features": [],
     "technologies": [
       { "name": "Laravel 9" },
@@ -71,12 +82,12 @@
     ]
   },
   {
-    "id": 6,
+    "id": 7,
     "title": "Capstone Titles Evaluation System (2023)",
     "role": "Full-stack developer",
     "link": "https://4ictes.almarjavier.com",
     "description": "Evaluation system for capstone title proposal of capstone groups. The system should determine which capstone title a group should persue among the 3 titles submitted",
-    "thumbnail": "capstonetitlesevaulationsystem.png",
+    "thumbnail": "assets/image/project-thumbnail/capstonetitlesevaulationsystem.png",
     "features": [],
     "technologies": [
       { "name": "Laravel 10" },

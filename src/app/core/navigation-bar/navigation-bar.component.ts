@@ -17,15 +17,8 @@ export class NavigationBarComponent implements OnInit{
 
   ngOnInit(): void {
 
-
-    if(!(!!localStorage.getItem("isDark"))){
-      this.isDark = true;
-      this._theme.changeTheme("dark")
-      localStorage.setItem("isDark", "yes")
-    }
     if(localStorage.getItem("isDark") == "yes"){
       this.isDark = true;
-      this._theme.changeTheme("dark")
     }
 
   }

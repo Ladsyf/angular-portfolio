@@ -1,0 +1,67 @@
+[
+  {
+    "type": "Front-end",
+    "icon": "assets/logo/skills/front/angular.svg",
+    "name": "Angular"
+  },
+  {
+    "type": "Front-end",
+    "icon": "assets/logo/skills/front/tailwindcss.svg",
+    "name": "TailwindCSS"
+  },
+  {
+    "type": "Front-end",
+    "icon": "assets/logo/skills/front/html.svg",
+    "name": "HTML"
+  },
+  {
+    "type": "Front-end",
+    "icon": "assets/logo/skills/front/css.svg",
+    "name": "CSS"
+  },
+  {
+    "type": "Front-end",
+    "icon": "assets/logo/skills/front/javascript.svg",
+    "name": "JavaScript"
+  },
+  {
+    "type":"Back-end",
+    "icon":"assets/logo/skills/back/laravel.svg",
+    "name":"Laravel"
+  },
+  {
+    "type":"Back-end",
+    "icon":"assets/logo/skills/back/django.svg",
+    "name":"Django"
+  },
+  {
+    "type":"Back-end",
+    "icon":"assets/logo/skills/back/flask.svg",
+    "name":"Flask"
+  },
+  {
+    "type":"Back-end",
+    "icon":"assets/logo/skills/back/php.svg",
+    "name":"PHP"
+  },
+  {
+    "type":"Back-end",
+    "icon":"assets/logo/skills/back/mysql.svg",
+    "name":"MySQL"
+  },
+  {
+    "type":"Others",
+    "icon":"assets/logo/skills/other/git.svg",
+    "name":"git"
+  },
+  {
+    "type":"Others",
+    "icon":"assets/logo/skills/other/xd.svg",
+    "name":"Adobe XD"
+  },
+  {
+    "type":"Others",
+    "icon":"assets/logo/skills/other/photoshop.svg",
+    "name":"Adobe Photoshop"
+  }
+]

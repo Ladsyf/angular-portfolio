@@ -7,17 +7,13 @@ import { IProject } from './interface/iproject';
   providedIn: 'root'
 })
 export class ProjectService {
-  client="http://localhost:4200"
-  url="http://localhost:4200/assets/api"
+  client="https://www.almarjavier.com"
+  url=`assets/api`
 
   constructor(private _http: HttpClient) { }
 
   show(): Observable<IProject[]> {
     return this._http.get<IProject[]>(`${this.url}/project.json`);
-  }
-
-  getFileLink(path: string){
-    return `${this.client}/${path}`
   }
 
 }

@@ -69,7 +69,13 @@
 :host:hover {
   --hover-opacity: 1;
 }
-
+.click {
+  display: block;
+  width: 100%;
+  text-align: center;
+  color: var(--text-color);
+  font-size: .8rem;
+}
 @media screen and (max-width: 650px){
   :host {
     width: 100%;

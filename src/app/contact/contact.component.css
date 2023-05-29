@@ -2,3 +2,57 @@
   position: relative;
   top: 100px;
 }
+prt-section-layout {
+  width: 50rem;
+  margin: auto;
+  height: calc(100dvh - 250px);
+  justify-content: center;
+  align-items: center;
+}
+.contacts {
+  margin: auto;
+  display: flex;
+  gap: 6rem;
+}
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: .8rem;
+}
+.contact * {
+  color: var(--text-color)
+}
+.contact > span {
+  display: block;
+}
+
+.contact-logo-container {
+  display: flex;
+  padding: 1.2rem;
+  border-radius: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--background-color-secondary);
+}
+.contact-logo{
+  display: flex;
+  width: 2.4rem;
+  aspect-ratio: 1/1;
+}
+.contact-logo *{
+  fill: var(--text-color);
+}
+
+@media screen and (max-width: 1000px) {
+  prt-section-layout {
+    flex-direction: row;
+    width: 100%;
+  }
+  .contacts{
+    margin-top: 1rem;
+    gap: 2rem;
+    flex-direction: column;
+  }
+}

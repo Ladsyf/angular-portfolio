@@ -4,7 +4,7 @@
     <h1>
       {{ project?.title }}
     </h1>
-    <img class="thumbnail" [src]="getFileLink('assets/image/project-thumbnail/'+project?.thumbnail)" />
+    <img class="thumbnail" [src]="project?.thumbnail" />
     <p>Role: {{ project?.role }}</p>
     <p>Description: {{ project?.description }}</p>
     <p *ngIf="!!project?.github">
@@ -33,7 +33,7 @@
         <div>
           {{feature.title}}
         </div>
-        <img [src]="getFileLink('assets/image/project-feature/' + feature.path)" >
+        <img [src]="feature.path" >
         <div>
           {{feature.description}}
         </div>

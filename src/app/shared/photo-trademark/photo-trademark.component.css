@@ -6,7 +6,7 @@
 }
 #picBackground {
   position: absolute;
-  background-color: var(--text-color-secondary);
+  background-color: var(--background-color-secondary);
   height: 95%;
   width: 95%;
   left: 2.5%;

@@ -1,5 +1,51 @@
 <prt-navigation-bar [active]="4" [@hide] *ngIf="isOpen()"></prt-navigation-bar>
-<prt-section-layout header="Here's how you can reach me" [@fade] *ngIf="!isNext()">
+<prt-section-layout header="Get in touch" [@fade] *ngIf="!isNext()">
+  <div class="contacts">
+    <div class="contact">
+      <div class="contact-logo-container">
+        <svg class="contact-logo" viewBox="0 0 36 36" version="1.1"  preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <path class="clr-i-solid clr-i-solid-path-1" d="M32.33,6a2,2,0,0,0-.41,0h-28a2,2,0,0,0-.53.08L17.84,20.47Z"></path><path class="clr-i-solid clr-i-solid-path-2" d="M33.81,7.39,19.25,21.89a2,2,0,0,1-2.82,0L2,7.5a2,2,0,0,0-.07.5V28a2,2,0,0,0,2,2h28a2,2,0,0,0,2-2V8A2,2,0,0,0,33.81,7.39ZM5.3,28H3.91V26.57l7.27-7.21,1.41,1.41Zm26.61,0H30.51l-7.29-7.23,1.41-1.41,7.27,7.21Z"></path>
+          <rect x="0" y="0" width="36" height="36" fill-opacity="0"/>
+      </svg>
+      </div>
+      <span style="font-family:'gothamMedium'"> Email </span>
+      <span style="text-decoration: underline;"> almarjavier24@gmail.com </span>
+    </div>
+
+    <div class="contact">
+      <div class="contact-logo-container">
+        <svg class="contact-logo" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M2.00589 4.54166C1.905 3.11236 3.11531 2 4.54522 2H7.60606C8.34006 2 9.00207 2.44226 9.28438 3.1212L10.5643 6.19946C10.8761 6.94932 10.6548 7.81544 10.0218 8.32292L9.22394 8.96254C8.86788 9.24798 8.74683 9.74018 8.95794 10.1448C10.0429 12.2241 11.6464 13.9888 13.5964 15.2667C14.008 15.5364 14.5517 15.4291 14.8588 15.0445L15.6902 14.003C16.1966 13.3687 17.0609 13.147 17.8092 13.4594L20.8811 14.742C21.5587 15.0249 22 15.6883 22 16.4238V19.5C22 20.9329 20.8489 22.0955 19.4226 21.9941C10.3021 21.3452 2.65247 13.7017 2.00589 4.54166Z" fill="#000000"/>
+          </svg>
+      </div>
+      <span style="font-family:'gothamMedium'"> Mobile </span>
+      <span style="text-decoration: underline;"> +639092095920 </span>
+    </div>
+
+    <div class="contact">
+      <div class="contact-logo-container">
+      <svg
+        version="1.0"
+        id="Layer_1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        class="contact-logo"
+        viewBox="0 0 64 64"
+        enable-background="new 0 0 64 64"
+        xml:space="preserve"
+      >
+        <path
+          fill="#231F20"
+          d="M32,0C18.746,0,8,10.746,8,24c0,5.219,1.711,10.008,4.555,13.93c0.051,0.094,0.059,0.199,0.117,0.289l16,24
+	C29.414,63.332,30.664,64,32,64s2.586-0.668,3.328-1.781l16-24c0.059-0.09,0.066-0.195,0.117-0.289C54.289,34.008,56,29.219,56,24
+	C56,10.746,45.254,0,32,0z M32,32c-4.418,0-8-3.582-8-8s3.582-8,8-8s8,3.582,8,8S36.418,32,32,32z"
+        />
+      </svg>
+      </div>
+      <span style="font-family:'gothamMedium'"> Location </span>
+      <span style="text-decoration: underline;"> Malolos, Bulacan, Philippines </span>
+    </div>
+  </div>
 </prt-section-layout>
 <prt-previous
   label="About me"

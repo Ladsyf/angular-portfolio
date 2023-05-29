@@ -8,7 +8,6 @@ import {
 } from 'src/app/animations';
 import { IProject } from 'src/app/interface/iproject';
 import { NavigationService } from 'src/app/navigation.service';
-import { ProjectService } from 'src/app/project.service';
 
 @Component({
   selector: 'prt-project-details',
@@ -31,7 +30,6 @@ export class ProjectDetailsComponent implements OnInit {
   constructor(
     private _nav: NavigationService,
     private _route: ActivatedRoute,
-    private _project: ProjectService
   ) {}
 
   ngOnInit(): void {
@@ -76,9 +74,5 @@ export class ProjectDetailsComponent implements OnInit {
 
   isOpen() {
     return this._nav.isOpen;
-  }
-
-  getFileLink(path?: string){
-    return this._project.getFileLink(String(path));
   }
 }
